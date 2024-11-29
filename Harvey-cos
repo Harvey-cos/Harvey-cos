@@ -1,75 +1,58 @@
 import streamlit as st
 
-# Set up the page configuration
-st.set_page_config(page_title="My Biography", page_icon="👋", layout="wide")
+# Title of the Biography page
+st.title("The Biography of Harvey Cosinero: All About Me")
 
-# Display your profile picture at the top
-st.image("profile_picture.jpg", width=200, caption="This is me!", use_column_width=False)
+# Add an image
+st.image("https://scontent.fcgy2-4.fna.fbcdn.net/v/t39.30808-6/457309363_1712832432817094_7608989881096554986_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEqvcPkV2tVmplAD6VjHISMT3qbEMiyebpPepsQyLJ5utCsK58QKuSLSXr56p_s49aXMcrtvaBRGfkg11SH_Vgp&_nc_ohc=pQYRaEakR8gQ7kNvgEgfvVD&_nc_zt=23&_nc_ht=scontent.fcgy2-4.fna&_nc_gid=Asw9lKEuJ2bfUPHx0yaVZ_X&oh=00_AYAW2ZbhzQplYEsfmymj_FnZsGMygj1Rh2yZhwTZAhQDtA&oe=674F3312", width=400)  # Replace with your image path or URL
 
-# Title Section
-st.title("Hi, I'm John Doe 👋")
-st.subheader("Welcome to my personal biography! I'm a first-year Computer Engineering student.")
-
-# Section 1: Personal Information
-st.header("Personal Information")
+# Add some text and subheadings
+st.header("About Me")
 st.write("""
-    - **Height**: 5'10" (178 cm)
-    - **Date of Birth**: January 1, 2005
-    - **Location**: New York, USA
-    - **Current Status**: First-year student in **Bachelor of Science in Computer Engineering**
+Hello! My name is *Harvey Y. Cosiñero*, and I am 18 years old. I live in Brgy. Punta Bilar, Surigao City, Surigao Del Norte. I go to the gym to improve my body, enjoy watching anime and movies, love hanging out with my friends to have fun, and I’m deeply in love with my girlfriend.
 """)
 
-# Section 2: Education
+# Early Life
+st.header("Early Life")
+st.write("""
+I was born in Caraga Region Hospital, Surigao City, and raised in Brgy. Punta Bilar, Surigao City, Surigao del Norte. I graduated elementary at Punta Bilar from Kindergarten to Grade 6. When I turned 12, my family moved to Batangas City, where my cousins and aunt lived. I continued my education in Batangas, attending school in Brgy. Bulihan, Malvar, Batangas, from Grade 7 to Grade 11. During my time there, I met a lot of new people and made great memories.
+
+In Grade 12, I returned to Surigao City, where I reconnected with old friends and met new ones. This was also when I met my amazing girlfriend. Along with enjoying time with my friends, I continued to pursue hobbies like going to the gym, watching anime, and exploring new places.
+""")
+
+# Education
 st.header("Education")
 st.write("""
-    - 🎓 **Bachelor of Science in Computer Engineering** - XYZ University (2024 - Present)
-    - 📖 I’m learning the fundamentals of **Computer Engineering**, including **Programming**, **Electronics**, and **Mathematics**.
-    - 📚 Completed courses in **Intro to Programming**, **Digital Logic Design**, and **Mathematics for Engineers**.
+I graduated high school from Malvar School of Arts and Trade and later completed my studies at Surigao del Norte National High School, where I graduated *with honors*. Throughout my educational journey, I focused on expanding my knowledge, building strong relationships with my peers and teachers, and striving to excel in both academics and extracurricular activities. These experiences taught me the importance of discipline, hard work, and continuous self-improvement. 
 """)
 
-# Section 3: Skills & Technologies
-st.header("Skills & Technologies")
+# Career
+st.header("Career")
 st.write("""
-    - **Languages**: Python, C++, JavaScript (Beginner)
-    - **Tools**: Git, VSCode, Jupyter Notebook
-    - **Other Interests**: Machine Learning, Artificial Intelligence, Web Development
+After graduating from high school, I enrolled at Surigao del Norte State University (SNSU) to pursue a degree in Computer Engineering. This marked the beginning of my journey into the world of technology, where I aspire to develop innovative solutions and contribute to solving real-world problems using the skills and knowledge I gain throughout my studies.
 """)
 
-# Section 4: Achievements (as a student)
-st.header("Achievements")
+# Hobbies and Interests
+st.header("Hobbies and Interests")
 st.write("""
-    - 🏆 **1st Place** in a local **coding competition** organized by the university.
-    - 📚 **Completed an online course** on **Python for Data Science** from Coursera.
-    - 🌐 Built a **personal website** using **HTML** and **CSS** as part of a school project.
+When I'm not hitting the gym or watching anime, I love *spending time with my friends*, *watching movies*, and *exploring new places*. I also feel incredibly lucky to have a wonderful girlfriend who I enjoy creating memories with.
 """)
 
-# Section 5: Hobbies & Interests
-st.header("Hobbies & Interests")
-st.write("""
-    - 🎮 **Gaming**: I love playing strategy games and multiplayer games with my friends.
-    - 📸 **Photography**: Capturing nature and landscapes whenever I have the chance.
-    - 🎧 **Music**: I enjoy listening to all kinds of music, especially lo-fi and electronic genres.
-    - 🏞️ **Hiking**: Exploring new trails and spending time outdoors.
-""")
+# Contact Information
+st.header("Contact Information")
+st.write("You can reach me at:")
+st.write("📞 *Contact Number*: +63 9124753701")  # Replace with your actual contact number
+st.write("📧 *Email*: [cosineroharvey@gmail.com](mailto:cosineroharvey@gmail.com)")  # Replace with your Gmail
 
-# Section 6: Contact Information (Social Media Links)
+# Social Media
 st.header("Connect with Me")
 st.write("""
-    - 📧 [Email me](mailto:your.email@example.com)
-    - 💼 [LinkedIn](https://www.linkedin.com/in/johndoe/)
-    - 🐦 [Twitter](https://twitter.com/johndoe)
-    - 📸 [Instagram](https://www.instagram.com/johndoe/)
-    - 👤 [Facebook](https://www.facebook.com/johndoe/)
+Feel free to connect with me on social media!
+
+- Instagram: [@harv_cosi](https://www.instagram.com/harv_cosi?igsh=MXE3ZDIyNGJ2MWk0Yw==)
+- Facebook: [Harvey Yordan Cosiñero](https://www.facebook.com/cosineroharvey?mibextid=ZbWKwL)
 """)
 
-# Section 7: GitHub Stats (Optional)
-st.header("GitHub Stats")
-st.markdown("""
-    ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=johndoe&show_icons=true&count_private=true&hide_title=true)
-""")
-
-# Section 8: Fun Fact
-st.header("Fun Fact")
-st.write("""
-    - I’m always curious about how things work, especially when it comes to **technology** and **electronics**. I love solving puzzles!
-""")
+# Footer
+st.markdown("---")
+st.write("© 2024 Harvey Y. Cosiñero | All rights reserved")
